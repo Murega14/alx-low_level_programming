@@ -1,10 +1,11 @@
 #include<stdio.h>
+#include<unistd.h>
 /*main - shows the entry point
  * 
  * Return is zero to show success
  */
-void main()
+int _putchar(char c)
 {
-	printf("_putchar");
-	return 0;
+	
+	return (write(1, &c, 1));
 }
