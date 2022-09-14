@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include<unistd.h>
 /*main - shows the entry point
  * 
