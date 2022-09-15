@@ -1,10 +1,27 @@
-#include<unistd.h>
-/*main - shows the entry point
- * 
- * Return is zero to show success
+#include "main.h"
+
+/**
+ * main - shows the entry point
+ *
+ * Return: is zero to show success
  */
-int _putchar(char c)
+
+int main(void)
 {
-	
-	return (write(1, &c, 1));
+	char ch[] = "_putchar";
+
+	int i;
+
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(ch[i]);
+	}
+
+	_putchar('\n');
+
+	return (0);
+
 }
+
+
+
